@@ -79,7 +79,7 @@ function bookTicket() {
     let seatType = seatSelected.value;
     let price = 200;
 
-    // Price by seat type
+    // Price by seat typea
     if (seatType === "Silver") {
         price = 200;
     } else if (seatType === "Gold") {
