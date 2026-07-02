@@ -1,0 +1,107 @@
+body {
+    
+    margin: 0;
+    font-family: Arial;
+    background: radial-gradient(circle at center,
+        #8b0000 0%,
+        #4a0000 35%,
+        #1a0000 55%,
+        #000000 85%);
+
+}
+
+/* Headings */
+h1, h2, h3, label {
+    color: white;
+    text-shadow: 0 0 8px red;
+}
+
+/* Main container */
+.container {
+   
+    width: 500px;
+    margin: 20px auto;
+    background: linear-gradient(180deg, #140000, #2b0000, #4d0000);
+    border-radius: 20px;
+    box-shadow: 0 0 35px rgba(255, 0, 0, 0.25);
+    padding: 30px;
+    text-align: center;
+}
+
+/* Movie cards */
+.movies {
+    display: grid;
+    grid-template-columns: repeat(2, 140px);
+    gap: 20px;
+    justify-content: center;
+}
+
+.movie-card {
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 12px;
+    background: #111;
+}
+
+.movie-card img {
+    width: 120px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.movie-selected {
+    border: 4px solid #f4b400;
+}
+
+/* Inputs */
+input, select, button {
+    width: 90%;
+    padding: 12px;
+    margin: 10px;
+    border-radius: 8px;
+    border: none;
+}
+
+input::placeholder {
+    color: gray;
+}
+
+/* Buttons */
+button {
+    background: #f4b400;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Seat layout */
+.seats {
+    display: grid;
+    grid-template-columns: repeat(4, 60px);
+    gap: 10px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.seat {
+    padding: 15px;
+    background: #222;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+}
+
+.selected {
+    background: #f4b400;
+    color: black;
+}
+
+/* Ticket */
+#ticket {
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px dashed white;
+    background: #111;
+    color: white;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Ticket Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Movie Ticket Booking</h1>
+    <input type="text" id="customerName" placeholder="Enter your name">
+
+<input type="number" id="age" placeholder="Enter your age">
+
+<h3>Seat Type</h3>
+
+<label>
+    <input type="radio" name="seatType" value="Silver"> Silver
+</label>
+
+<label>
+    <input type="radio" name="seatType" value="Gold"> Gold
+</label>
+
+<label>
+    <input type="radio" name="seatType" value="Platinum"> Platinum
+</label>
+
+<input type="number" id="ticketCount" placeholder="Number of Tickets">
+
+    <h3>Select Movie</h3>
+    <div class="movies">
+        <div class="movie-card" onclick="selectMovie('TOXIC', this)">
+            <img src="toxic.jpg">
+            <p>RRR</p>
+        </div>
+
+        <div class="movie-card" onclick="selectMovie('DHAMMAL 4', this)">
+            <img src="dhammal.jpg">
+            <p>KGF</p>
+        </div>
+
+        <div class="movie-card" onclick="selectMovie('ALPHA', this)">
+            <img src="maxresdefault.jpg">
+            <p>Pushpa</p>
+        </div>
+
+        <div class="movie-card" onclick="selectMovie('EVIL DEAD BORN', this)">
+            <img src="OIP.webp">
+            <p>Bahubali</p>
+        </div>
+    </div>
+
+    <h3 id="selectedMovie">No Movie Selected</h3>
+
+    <input type="date" id="date">
+
+    <select id="time">
+        <option>10:00 AM</option>
+        <option>2:00 PM</option>
+        <option>6:00 PM</option>
+        <option>10:00 PM</option>
+    </select>
+
+    <h3>SCREEN</h3>
+
+    <div class="seats">
+        <div class="seat" onclick="selectSeat(this)">A1</div>
+        <div class="seat" onclick="selectSeat(this)">A2</div>
+        <div class="seat" onclick="selectSeat(this)">A3</div>
+        <div class="seat" onclick="selectSeat(this)">A4</div>
+
+        <div class="seat" onclick="selectSeat(this)">B1</div>
+        <div class="seat" onclick="selectSeat(this)">B2</div>
+        <div class="seat" onclick="selectSeat(this)">B3</div>
+        <div class="seat" onclick="selectSeat(this)">B4</div>
+
+        <div class="seat" onclick="selectSeat(this)">C1</div>
+        <div class="seat" onclick="selectSeat(this)">C2</div>
+        <div class="seat" onclick="selectSeat(this)">C3</div>
+        <div class="seat" onclick="selectSeat(this)">C4</div>
+
+        <div class="seat" onclick="selectSeat(this)">D1</div>
+        <div class="seat" onclick="selectSeat(this)">D2</div>
+        <div class="seat" onclick="selectSeat(this)">D3</div>
+        <div class="seat" onclick="selectSeat(this)">D4</div>
+    </div>
+
+    <input type="text" id="coupon" placeholder="Coupon Code">
+
+    <select id="payment">
+        <option>UPI</option>
+        <option>Debit Card</option>
+        <option>Credit Card</option>
+        <option>Cash</option>
+    </select>
+
+    <button onclick="bookTicket()">Book Now</button>
+    <button onclick="downloadTicket()">Download Ticket</button>
+
+    <div id="ticket"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
