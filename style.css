@@ -105,3 +105,39 @@ button {
     background: #111;
     color: white;
 }
+
+
+.title{
+    font-size:60px;
+    font-weight:900;
+    letter-spacing:8px;
+    color:#d8a64b;
+    text-transform:uppercase;
+    text-shadow:
+        0 0 8px rgba(216,166,75,.5),
+        0 0 20px rgba(216,166,75,.3);
+    margin:0;
+}
+
+.subtitle{
+    margin-top:10px;
+    color:#a98a52;
+    letter-spacing:8px;
+    font-size:18px;
+    text-transform:uppercase;
+}
+
+.lights{
+    display:flex;
+    justify-content:center;
+    gap:14px;
+    margin-top:20px;
+}
+
+.lights span{
+    width:12px;
+    height:12px;
+    background:#d8a64b;
+    border-radius:50%;
+    box-shadow:0 0 10px #d8a64b;
+}
